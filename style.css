@@ -146,7 +146,9 @@ nav {
 }
 
 .nav-panel a {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
   padding: 12px 24px;
   font-family: var(--font-sans);
   font-weight: 600;
