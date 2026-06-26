@@ -6,6 +6,7 @@
   --terra:         #C4622D;
   --cream:         #F8F3EC;
   --charcoal:      #2C2323;
+  --white:         #fff;
   --overlay:       rgba(0,0,0,0.55);
   --nav-height:    60px;
   --scroll-offset: 70px; /* spec requires 70px scroll-margin-top */
@@ -30,7 +31,7 @@ body {
   font-family: var(--font-sans);
   color: var(--charcoal);
   line-height: 1.7;
-  background: #fff;
+  background: var(--white);
 }
 
 img {
@@ -84,7 +85,7 @@ nav {
 .nav-logo {
   font-family: var(--font-serif);
   font-size: 1.25rem; /* 20px per spec */
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -100,7 +101,7 @@ nav {
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.9375rem;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -118,7 +119,7 @@ nav {
   height: 44px;
   background: none;
   border: none;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
   padding: 0;
 }
@@ -150,7 +151,7 @@ nav {
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 1rem;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   line-height: 1.5;
 }
