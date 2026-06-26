@@ -274,3 +274,122 @@ nav {
 @media (prefers-reduced-motion: reduce) {
   .hero-chevron { animation: none; }
 }
+
+/* ===== ABOUT ===== */
+.about {
+  background: var(--cream);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.about-photo-placeholder {
+  aspect-ratio: 3/4;
+  max-width: 300px;
+  width: 100%;
+  background: #D4C5B0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about-photo-placeholder span {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 3rem;
+  color: var(--charcoal);
+}
+
+/* When replaced with real <img>: */
+.about-photo {
+  aspect-ratio: 3/4;
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
+
+.section-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 12px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+}
+
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.badge-bilingual {
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.badge-tico {
+  border: 1px solid var(--gold);
+  color: var(--gold-text);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.badge-tico-num {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  color: var(--teal);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  border: 1px solid var(--gold-text);
+  color: var(--gold-text);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 80px;
+  }
+  .about-photo-placeholder,
+  .about-photo {
+    max-width: 100%;
+    margin: 0;
+  }
+}
