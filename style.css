@@ -235,6 +235,16 @@ nav {
   margin-top: 12px;
 }
 
+.hero-tico a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-tico a:hover {
+  color: var(--white);
+}
+
 /* ===== SHARED BUTTON ===== */
 .btn {
   display: inline-block;
